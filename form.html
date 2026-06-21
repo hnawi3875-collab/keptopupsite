@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta -->
+    <title>KepTopUp | Form Topup Game</title>
+    <meta name="description" content="Form topup game cepat, aman, dan mudah di KepTopUp.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="form.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">
+        Lewati ke konten utama
+    </a>
+
+    <div class="site-wrapper">
+
+        <!-- Header -->
+        <header class="site-header" role="banner">
+            <div class="container">
+
+                <a href="index.html" class="back-button" aria-label="Kembali ke halaman utama">
+                    <span class="back-button__icon" aria-hidden="true">←</span>
+                    <span class="back-button__text">Kembali</span>
+                </a>
+
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" class="site-main">
+
+            <div class="container">
+
+                <!-- Game Banner -->
+                <section class="game-banner" aria-labelledby="game-title">
+
+                    <div class="game-banner__image-wrapper">
+                        <img
+                            id="game-banner-image"
+                            class="game-banner__image"
+                            src="assets/default-game.webp"
+                            alt="Banner Game"
+                            width="1200"
+                            height="500"
+                        >
+                    </div>
+
+                    <div class="game-banner__content">
+
+                        <div class="game-banner__badge">
+                            <span class="game-banner__badge-icon" aria-hidden="true">🔒</span>
+                            <span class="game-banner__badge-text">
+                                Pembayaran Aman
+                            </span>
+                        </div>
+
+                        <h1 id="game-title" class="game-banner__title">
+                            Pilih Game
+                        </h1>
+
+                        <p class="game-banner__subtitle">
+                            Topup cepat, aman, dan diproses secara otomatis.
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- Topup Form -->
+                <form class="topup-form" id="topup-form" novalidate>
+
+                    <!-- Step 1 -->
+                    <section
+                        class="form-section"
+                        aria-labelledby="user-id-title"
+                    >
+
+                        <header class="form-section__header">
+                            <span class="form-section__step">
+                                1
+                            </span>
+
+                            <h2
+                                id="user-id-title"
+                                class="form-section__title"
+                            >
+                                Masukkan User ID
+                            </h2>
+                        </header>
+
+                        <div class="form-section__body">
+
+                            <div class="form-group">
+
+                                <label
+                                    for="user-id"
+                                    class="form-label"
+                                >
+                                    User ID
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="user-id"
+                                    name="userId"
+                                    class="form-input"
+                                    placeholder="Masukkan User ID"
+                                    autocomplete="off"
+                                    inputmode="numeric"
+                                    required
+                                >
+
+                            </div>
+
+                            <div
+                                class="form-helper"
+                                id="user-id-helper"
+                            >
+                                Pastikan User ID yang dimasukkan sudah benar.
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!-- Step 2 -->
+                    <section
+                        class="form-section"
+                        aria-labelledby="nominal-title"
+                    >
+
+                        <header class="form-section__header">
+                            <span class="form-section__step">
+                                2
+                            </span>
+
+                            <h2
+                                id="nominal-title"
+                                class="form-section__title"
+                            >
+                                Pilih Nominal
+                            </h2>
+                        </header>
+
+                        <div
+                            class="nominal-grid"
+                            role="radiogroup"
+                            aria-label="Pilih nominal topup"
+                        >
+
+                            <label class="nominal-card">
+                                <input
+                                    type="radio"
+                                    name="nominal"
+                                    value="10000"
+                                >
+
+                                <span class="nominal-card__amount">
+                                    86 Diamonds
+                                </span>
+
+                                <span class="nominal-card__price">
+                                    Rp10.000
+                                </span>
+                            </label>
+
+                            <label class="nominal-card">
+                                <input
+                                    type="radio"
+                                    name="nominal"
+                                    value="20000"
+                                >
+
+                                <span class="nominal-card__amount">
+                                    172 Diamonds
+                                </span>
+
+                                <span class="nominal-card__price">
+                                    Rp20.000
+                                </span>
+                            </label>
+
+                            <label class="nominal-card">
+                                <input
+                                    type="radio"
+                                    name="nominal"
+                                    value="50000"
+                                >
+
+                                <span class="nominal-card__amount">
+                                    429 Diamonds
+                                </span>
+
+                                <span class="nominal-card__price">
+                                    Rp50.000
+                                </span>
+                            </label>
+
+                            <label class="nominal-card">
+                                <input
+                                    type="radio"
+                                    name="nominal"
+                                    value="100000"
+                                >
+
+                                <span class="nominal-card__amount">
+                                    878 Diamonds
+                                </span>
+
+                                <span class="nominal-card__price">
+                                    Rp100.000
+                                </span>
+                            </label>
+
+                        </div>
+
+                    </section>
+
+                    <!-- Step 3 -->
+                    <section
+                        class="form-section"
+                        aria-labelledby="payment-title"
+                    >
+
+                        <header class="form-section__header">
+                            <span class="form-section__step">
+                                3
+                            </span>
+
+                            <h2
+                                id="payment-title"
+                                class="form-section__title"
+                            >
+                                Metode Pembayaran
+                            </h2>
+                        </header>
+
+                        <div
+                            class="payment-grid"
+                            role="radiogroup"
+                            aria-label="Pilih metode pembayaran"
+                        >
+
+                            <label class="payment-card">
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="dana"
+                                >
+
+                                <span class="payment-card__name">
+                                    DANA
+                                </span>
+                            </label>
+
+                            <label class="payment-card">
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="gopay"
+                                >
+
+                                <span class="payment-card__name">
+                                    GoPay
+                                </span>
+                            </label>
+
+                            <label class="payment-card">
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="ovo"
+                                >
+
+                                <span class="payment-card__name">
+                                    OVO
+                                </span>
+                            </label>
+
+                            <label class="payment-card">
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="qris"
+                                >
+
+                                <span class="payment-card__name">
+                                    QRIS
+                                </span>
+                            </label>
+
+                            <label class="payment-card">
+                                <input
+                                    type="radio"
+                                    name="payment"
+                                    value="bank-transfer"
+                                >
+
+                                <span class="payment-card__name">
+                                    Transfer Bank
+                                </span>
+                            </label>
+
+                        </div>
+
+                    </section>
+
+                    <!-- Order Summary -->
+                    <aside
+                        class="order-summary"
+                        aria-labelledby="summary-title"
+                    >
+
+                        <header class="order-summary__header">
+
+                            <h2
+                                id="summary-title"
+                                class="order-summary__title"
+                            >
+                                Ringkasan Pesanan
+                            </h2>
+
+                        </header>
+
+                        <div class="order-summary__body">
+
+                            <div class="summary-item">
+                                <span class="summary-item__label">
+                                    Game
+                                </span>
+
+                                <span
+                                    class="summary-item__value"
+                                    id="summary-game"
+                                >
+                                    -
+                                </span>
+                            </div>
+
+                            <div class="summary-item">
+                                <span class="summary-item__label">
+                                    User ID
+                                </span>
+
+                                <span
+                                    class="summary-item__value"
+                                    id="summary-user-id"
+                                >
+                                    -
+                                </span>
+                            </div>
+
+                            <div class="summary-item">
+                                <span class="summary-item__label">
+                                    Nominal
+                                </span>
+
+                                <span
+                                    class="summary-item__value"
+                                    id="summary-nominal"
+                                >
+                                    -
+                                </span>
+                            </div>
+
+                            <div class="summary-item">
+                                <span class="summary-item__label">
+                                    Pembayaran
+                                </span>
+
+                                <span
+                                    class="summary-item__value"
+                                    id="summary-payment"
+                                >
+                                    -
+                                </span>
+                            </div>
+
+                            <div class="summary-divider"></div>
+
+                            <div class="summary-item summary-item--total">
+                                <span class="summary-item__label">
+                                    Total Bayar
+                                </span>
+
+                                <span
+                                    class="summary-item__value"
+                                    id="summary-total"
+                                >
+                                    Rp0
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                    <!-- Submit Button -->
+                    <div class="checkout-action">
+
+                        <button
+                            type="submit"
+                            id="checkout-button"
+                            class="checkout-button"
+                        >
+                            Beli Sekarang
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- Toast Container -->
+    <div
+        id="toast-container"
+        class="toast-container"
+        aria-live="polite"
+        aria-atomic="true"
+    ></div>
+
+    <!-- JavaScript -->
+    <script src="form.js" defer></script>
+
+</body>
+</html>
